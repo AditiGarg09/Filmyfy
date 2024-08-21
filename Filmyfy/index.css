@@ -1,0 +1,185 @@
+:root {
+  --bg-color: #aa0000;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  box-shadow: 0 15px 40px -20px rgba(40, 44, 63, 0.15);
+  position: sticky;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 200;
+}
+
+.navItems ul {
+  display: flex;
+  padding: 10px;
+}
+
+.navItems > ul > li {
+  font-weight: 600;
+  width: 80px;
+  height: 25px;
+  margin: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.headerButton {
+  text-decoration: none;
+  color: rgba(2, 6, 12, 0.92);
+}
+
+.headerButton:hover {
+  color: var(--bg-color);
+}
+
+.navItems > ul > li:hover {
+  color: var(--bg-color);
+}
+
+#body {
+  padding: 10px;
+  top: 15%;
+  position: relative;
+  z-index: 1;
+}
+
+.filter {
+  padding: 10px;
+  display: flex;
+  width: 95%;
+}
+
+.TopRated {
+  background-color: var(--bg-color);
+  border-radius: 5px;
+  border-color: var(--bg-color);
+  color: #fff;
+  font-weight: 500;
+  width: auto;
+  height: 35px;
+  cursor: pointer;
+}
+
+.movieContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.mContainer {
+  margin-left: 0;
+  border: 1px solid #dfdfdf;
+  width: 190px;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 13px;
+}
+
+.movieName {
+  margin-top: -15px;
+}
+
+.movieName h3 {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: rgba(2, 6, 12, 0.92);
+}
+
+.movieFooter {
+  display: flex;
+  color: #696363;
+  margin-top: -15px;
+  justify-content: space-between;
+}
+
+.movieFooter > h4 {
+  margin-right: 11px;
+  font-size: 14px;
+}
+
+.mContainer:hover {
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.movieTime {
+  right: 0;
+  position: relative;
+}
+
+.movieShimmerImg {
+  height: 130px;
+  width: 190px;
+  background-color: #f0f0f0;
+}
+
+.movieShimmerName {
+  background-color: #f0f0f0;
+  height: 25px;
+  margin-top: -10px;
+}
+
+.movieShimmerFooter {
+  background-color: #f0f0f0;
+  height: 25px;
+  width: 75%;
+  margin-top: -7px;
+}
+
+.search {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.searchInput {
+  height: 25px;
+  border-radius: 5px;
+  border-color: var(--bg-color);
+  width: 86%;
+}
+
+.searchButton {
+  height: 30px;
+  border-radius: 5px;
+  border-color: var(--bg-color);
+  background-color: var(--bg-color);
+  color: #fff;
+  margin-left: 2px;
+  cursor: pointer;
+}
+
+::placeholder {
+  color: var(--bg-color);
+  opacity: 0.5;
+}
+
+.logo img {
+  position: absolute;
+  left: 6.3%;
+  top: 25%;
+}
+
+.aboutUsFuture {
+  width: 90%;
+  height: 300px;
+  border: 1px solid #f0f0f0;
+  text-align: center;
+  display: flex;
+  margin: 10px auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutUsFuture p {
+  width: 50%;
+}
